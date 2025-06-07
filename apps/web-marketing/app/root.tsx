@@ -30,6 +30,8 @@ export function HydrateFallback() {
 export function Layout({ children }: { children: React.ReactNode }) {
   const { lingoDictionary } = useLoaderData<typeof loader>();
 
+  console.log(lingoDictionary);
+
   return (
     <LingoProvider dictionary={lingoDictionary}>
       <html lang="en" dir="ltr" suppressHydrationWarning>
