@@ -36,6 +36,18 @@
           "content": "width=device-width, initial-scale=1"
         }
       }
+    },
+    "routes/home.tsx": {
+      "scopes": {
+        "1/declaration/body/0/argument/1": {
+          "type": "element",
+          "hash": "c040fe877dc55d1274b15a194c91b80a",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Democratizing AI support for SMEs. Zalando handles your customers' queries, anytime, anywhere."
+        }
+      }
     }
   }
 }
