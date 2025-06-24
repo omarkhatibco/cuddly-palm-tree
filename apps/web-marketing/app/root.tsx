@@ -14,8 +14,10 @@ import { loadDictionary } from "lingo.dev/react/react-router";
 import type { Route } from "./+types/root";
 
 export async function loader(args: Route.LoaderArgs) {
+  const x = await loadDictionary(args.request);
+  console.log({ x });
   return {
-    lingoDictionary: await loadDictionary(args.request),
+    lingoDictionary: x,
   };
 }
 
