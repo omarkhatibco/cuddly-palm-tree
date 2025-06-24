@@ -13,7 +13,7 @@ import { loadDictionary } from "lingo.dev/react/react-router";
 
 import type { Route } from "./+types/root";
 
-export async function loader(args: Route.LoaderFunctionArgs) {
+export async function loader(args: Route.LoaderArgs) {
   return {
     lingoDictionary: await loadDictionary(args.request),
   };
@@ -30,7 +30,7 @@ export function HydrateFallback() {
 export function Layout({ children }: { children: React.ReactNode }) {
   const { lingoDictionary } = useLoaderData<typeof loader>();
 
-  console.log(lingoDictionary);
+  console.log({ lingoDictionary });
 
   return (
     <LingoProvider dictionary={lingoDictionary}>

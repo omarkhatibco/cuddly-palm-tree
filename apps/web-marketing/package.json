@@ -15,7 +15,7 @@
     "@react-router/node": "catalog:",
     "hono": "catalog:",
     "isbot": "catalog:",
-    "lingo.dev": "^0.94.1",
+    "lingo.dev": "^0.99.8",
     "react": "catalog:",
     "react-dom": "catalog:",
     "react-router": "catalog:",
